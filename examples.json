@@ -1,0 +1,25 @@
+{
+  "createOrder": {
+    "method": "POST",
+    "url": "/api/orders",
+    "body": {
+      "customerName": "Alice Smith",
+      "phone": "555-0199",
+      "items": [
+        { "type": "Shirt", "quantity": 2 },
+        { "type": "Pants", "quantity": 1 }
+      ]
+    }
+  },
+  "updateStatus": {
+    "method": "PATCH",
+    "url": "/api/orders/ORD-12345678/status",
+    "body": {
+      "status": "PROCESSING"
+    }
+  },
+  "getFilteredOrders": {
+    "method": "GET",
+    "url": "/api/orders?status=READY&search=Alice"
+  }
+}
