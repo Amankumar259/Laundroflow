@@ -1,6 +1,7 @@
 # Deploying LaundroFlow - Frontend & Backend
 
 ## Architecture
+
 - **Backend:** Express.js server on Render (https://laundroflow.onrender.com)
 - **Frontend:** React + Vite on Vercel
 
@@ -136,6 +137,7 @@ git push
 **Framework Preset:** Select `Vite`
 
 **Build & Development Settings:**
+
 - **Build Command:** `npm run build`
 - **Output Directory:** `dist`
 - **Install Command:** `npm install`
@@ -169,10 +171,10 @@ https://laundroflow.vercel.app
 
 ### Environment Variables Reference
 
-| Variable | Value | Purpose |
-|----------|-------|---------|
-| `VITE_API_BASE_URL` | `https://laundroflow.onrender.com` | Backend API endpoint |
-| `GEMINI_API_KEY` | Your API Key | (only needed if frontend calls Gemini directly) |
+| Variable            | Value                              | Purpose                                         |
+| ------------------- | ---------------------------------- | ----------------------------------------------- |
+| `VITE_API_BASE_URL` | `https://laundroflow.onrender.com` | Backend API endpoint                            |
+| `GEMINI_API_KEY`    | Your API Key                       | (only needed if frontend calls Gemini directly) |
 
 ### Testing the Connection
 
@@ -225,10 +227,9 @@ Watch deployment progress in Vercel dashboard.
 
 ## Summary
 
-| Service | URL | Purpose |
-|---------|-----|---------|
+| Service     | URL                              | Purpose                              |
+| ----------- | -------------------------------- | ------------------------------------ |
 | Backend API | https://laundroflow.onrender.com | Express server with order management |
-| Frontend | https://laundroflow.vercel.app | React UI deployed on Vercel |
+| Frontend    | https://laundroflow.vercel.app   | React UI deployed on Vercel          |
 
 Both services communicate via REST API. The frontend is configured to call the backend automatically.
-
